@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form-JS Demo</title>
+  <!-- Стили form-js -->
+  <link rel="stylesheet" href="https://unpkg.com/@bpmn-io/form-js/dist/assets/form-js.css">
+</head>
+<body>
+  <div id="form-container"></div>
+
+  <!-- Скрипты form-js -->
+  <script src="https://unpkg.com/@bpmn-io/form-js/dist/form-js.umd.js"></script>
+  
+  <script>
+    // Загрузка схемы формы и рендеринг
+    fetch('form-schema.json')
+      .then(response => response.json())
+      .then(schema => {
+        const form = new FormJS.Form({
+          container: document.getElementById('form-container'),
+          schema: schema
+        });
+
+        form.on('submit', (event) => {
+          console.log('Данные формы:', event.data);
+        });
+      });
+  </script>
+</body>
+</html>

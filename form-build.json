@@ -1,0 +1,16 @@
+{
+    "type": "default",
+    "components": [
+      {
+        "type": "text",
+        "key": "name",
+        "label": "Ваше имя",
+        "validate": { "required": true }
+      },
+      {
+        "type": "number",
+        "key": "age",
+        "label": "Возраст"
+      }
+    ]
+  }
