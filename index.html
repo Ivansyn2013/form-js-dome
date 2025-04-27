@@ -14,10 +14,10 @@
   
   <script>
     // Загрузка схемы формы и рендеринг
-    fetch('form-schema.json')
+    fetch('form-build.json')
       .then(response => response.json())
       .then(schema => {
-        const form = new FormJS.Form({
+        const form = new Form.Form({
           container: document.getElementById('form-container'),
           schema: schema
         });
@@ -25,7 +25,13 @@
         form.on('submit', (event) => {
           console.log('Данные формы:', event.data);
         });
+      })
+      .catch(error => {
+        console.error('Ошибка загрузки формы:', error);
+        console.log(window.Form);
+        console.log(window.Form.Form);
       });
+
   </script>
 </body>
 </html>
