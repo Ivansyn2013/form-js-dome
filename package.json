@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "@bpmn-io/form-js": "^1.15.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "vite": "^6.3.3",
     "vite-plugin-inspect": "^11.0.1"
   }
