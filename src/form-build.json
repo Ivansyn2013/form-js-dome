@@ -1,16 +1,42 @@
 {
-    "type": "default",
-    "components": [
-      {
-        "type": "text",
-        "key": "name",
-        "label": "Ваше имя",
-        "validate": { "required": true }
+  "components": [
+    {
+      "text": "# File an Invoice\n\nAdd your invoice details below.",
+      "type": "text",
+      "id": "Field_19q2vlz"
+    },
+    {
+      "label": "Creditor",
+      "key": "creditor",
+      "type": "textfield",
+      "validate": {
+        "required": true
       },
-      {
-        "type": "number",
-        "key": "age",
-        "label": "Возраст"
-      }
-    ]
-  }
+      "id": "Field_0yjcd0o"
+    },
+    {
+      "label": "Invoice Number",
+      "description": "An invoice number in the format: C-123.",
+      "key": "invoiceNumber",
+      "type": "textfield",
+      "validate": {
+        "pattern": "^C-[0-9]+$"
+      },
+      "id": "Field_1od31by"
+    },
+    {
+      "label": "Submit",
+      "action": "submit",
+      "key": "submit",
+      "type": "button",
+      "id": "Field_0rswq3h"
+    }
+  ],
+  "schemaVersion": 18,
+  "exporter": {
+    "name": "form-js (https://demo.bpmn.io)",
+    "version": "1.15.0"
+  },
+  "type": "default",
+  "id": "Form_1j8qlhb"
+}
