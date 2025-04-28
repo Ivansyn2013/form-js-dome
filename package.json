@@ -17,9 +17,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ivansyn2013/form-js-demo/issues"
+    "url": "https://github.com/ivansyn2013/form-js-dome/issues"
   },
-  "homepage": "https://github.com/ivansyn2013/form-js-demo#readme",
+  "homepage": "https://github.com/ivansyn2013/form-js-dome#readme",
   "description": "",
   "dependencies": {
     "@bpmn-io/form-js": "^1.15.1"
